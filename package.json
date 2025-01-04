@@ -8,9 +8,9 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "tauri": "tauri",
-    "tauri:dev": "tauri dev",
-    "tauri:build": "tauri build",
-    "tauri:android:dev": "tauri android dev"
+    "desktop:dev": "tauri dev",
+    "desktop:build": "tauri build",
+    "android:dev": "tauri android dev"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
