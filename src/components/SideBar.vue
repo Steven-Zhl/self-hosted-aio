@@ -48,8 +48,9 @@ const toPage = (path: string, query?: any) => {
             @click="toPage('/service',{name: item.name})">
           <el-text>
             <el-icon>
-              <el-image :src="item.icon" :alt="item.name"/>
+              <el-image style="border-radius: 4px" :src="item.icon" :alt="item.name"/>
             </el-icon>
+
             {{ item.name }}
           </el-text>
         </el-menu-item>

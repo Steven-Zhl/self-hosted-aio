@@ -1,7 +1,8 @@
 import AList from "@/assets/icons/alist.svg";
 import Jellyfin from "@/assets/icons/jellyfin.svg";
 import VueTorrent from "@/assets/icons/vuetorrent.svg";
-import Stash from "@/assets/icons/stash.svg";
+import VitePress from "@/assets/icons/vitepress.svg";
+import Vuejs from "@/assets/icons/vuejs.svg";
 
 export interface ServiceType {
   name: string
@@ -26,6 +27,16 @@ const services: ServiceType[] = [
     name: "VueTorrent",
     icon: VueTorrent,
     host: "http://localhost:12138"
+  },
+  {
+    name: "Vue.js",
+    icon: Vuejs,
+    host: "http://localhost:3000"
+  },
+  {
+    name: "VitePress",
+    icon: VitePress,
+    host: "http://localhost:5173"
   }
 ]
 

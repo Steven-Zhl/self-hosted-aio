@@ -12,7 +12,7 @@ const topBarVisible = ref(true);
   <div class="common-layout">
     <el-container class="h-full flex flex-col">
       <transition name="fade">
-        <el-header v-if="topBarVisible" class="sticky top-0 shadow">
+        <el-header v-if="topBarVisible" class="p-4 md:p-8 sticky top-0 shadow">
           <top-bar @show-side-bar="sideBarVisible=true" @hide-top-bar="topBarVisible=false"/>
         </el-header>
       </transition>

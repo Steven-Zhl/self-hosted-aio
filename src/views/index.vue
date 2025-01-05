@@ -88,13 +88,13 @@ onMounted(() => {
                        :icon="iconMap(serviceStatus[item.name])"/>
 
             <el-icon :size="60">
-              <el-image :src="item.icon" :alt="item.name"/>
+              <el-image style="border-radius: 8px; width: 60px; height: 60px" :src="item.icon" :alt="item.name"/>
             </el-icon>
 
-            <div class="flex flex-col justify-between">
-              <el-text size="large">{{ item.name }}</el-text>
+            <div class="flex flex-col flex-1 justify-between">
+              <span class="text-base">{{ item.name }}</span>
 
-              <el-text type="primary">{{ item.host }}</el-text>
+              <span class="text-sm line-clamp-1" style="color: var(--el-color-primary)">{{ item.host }}</span>
             </div>
           </div>
         </el-card>
